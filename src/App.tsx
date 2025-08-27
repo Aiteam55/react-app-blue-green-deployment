@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <h1>
-          Hello World from version 1
+          Hello World from version 2
       </h1>
     </>
   )
