@@ -1,9 +1,12 @@
 pipeline {
-	agent none
+	agent any
+
+	tools {
+		nodejs 'node-24'
+	}
 
 	stages {
 		stage('Build React App') {
-			agent { docker { image 'node:20-alpine' } }
             steps {
 				sh '''
                     npm install
